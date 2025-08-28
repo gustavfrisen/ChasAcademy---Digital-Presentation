@@ -1,0 +1,171 @@
+body {
+  background-color: rgba(28,28,45, 0.7);
+}
+
+.div_main {
+  border: 2px solid black;
+  background-color: rgba(255,255,255,0.9);
+  margin: auto;
+  max-width: 1024px;
+  min-height: 512px;
+}
+
+.div_sub_0 {
+  border: 2px solid rgba(0,0,0,0.5);
+  display: flex;
+  margin: 1px;
+}
+
+.div_sub_1 {
+  border: 2px solid rgba(0,0,0,0.5);
+  display: flex;
+  margin: 1px;
+}
+
+.div_sub_2 {
+  border: 2px solid rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  min-height: 360px;
+}
+
+@media (max-width: 768px) {
+  .div_sub_0, .div_sub_1 {
+    flex-direction: column;
+  }
+}
+
+.img_profile {
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .img_profile {
+    width: min-content;
+    margin: auto;
+  }
+}
+
+.sec_profile {
+  border: 2px solid black;
+  border-bottom-width: 1px;
+  width: auto;
+  height: auto;
+}
+
+.sec_about {
+  border: 2px solid black;
+  border-top-width: 1px;
+  width: auto;
+  height: 100%;
+}
+
+.sec_hobbies {
+  border: 2px solid black;
+  border-right-width: 1px;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .sec_hobbies {
+    border: 2px solid black;
+    border-bottom-width: 1px;
+    width: auto
+  }
+}
+
+.sec_cv {
+  border: 2px solid black;
+  border-left-width: 1px;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .sec_cv {
+    border: 2px solid black;
+    border-top-width: 1px;
+    width: auto
+  }
+}
+
+.sec_course {
+  border: 2px solid black;
+  border-bottom-width: 1px;
+  display: flex;
+  width: auto;
+}
+
+.sec_role {
+  border: 2px solid black;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  display: flex;
+  width: auto;
+}
+
+.sec_companies {
+  border: 2px solid black;
+  border-top-width: 1px;
+  display: flex;
+  width: auto;
+}
+
+div {
+
+}
+
+@media (max-width: 768px) {
+  div {
+    /* margin: auto; */
+  }
+}
+
+h1 {
+  font-family:'Consolas', sans-serif;
+  font-size: 24px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family:'Consolas', sans-serif;
+  font-size: 24px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family:'Consolas', sans-serif;
+  font-size: 14px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+ul {
+  font-family:'Consolas', sans-serif;
+  font-size: 14px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  p, h1, h2 {
+    text-align: left;
+  }
+}
