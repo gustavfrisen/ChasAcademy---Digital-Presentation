@@ -1,8 +1,17 @@
 const btnTheme = document.getElementById('btnTheme');
-let toggled = false;
+
+let savedTheme = localStorage.getItem('theme') || 'light';
+applyTheme(savedTheme)
 
 btnTheme.addEventListener('click', () => {
-    if (toggled) {
+    let newTheme = (localStorage.getItem('theme') === 'dark') ? 'light' : 'dark';
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+});
+
+function applyTheme(theme)
+{
+    if (theme == 'light') {
         document.documentElement.style.setProperty('--bgCol', 'rgba(255,255,255,1)');
         document.documentElement.style.setProperty('--textCol', 'black');
         document.documentElement.style.setProperty('--linkCol', 'blue');
@@ -13,5 +22,22 @@ btnTheme.addEventListener('click', () => {
         document.documentElement.style.setProperty('--linkCol', 'lightblue');
         document.documentElement.style.setProperty('--borderCol', 'white');
     }
-    toggled = !toggled;
-});
+}
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const galleryImages = document.querySelectorAll(".sec_gallery img");
+
+galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+      });
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", (e) => {
+      if (e.target !== modalImg) {
+        modal.style.display = "none";
+      }
+    });
