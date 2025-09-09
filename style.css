@@ -85,13 +85,6 @@ body {
   }
 }
 
-/* .img_gallery {
-  height: 256px;
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
-
 .sec_profile {
   border: 2px solid var(--borderCol);
   border-bottom-width: 1px;
